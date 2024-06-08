@@ -11,8 +11,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ variables.FTP_SERVER }}
-        username: ${{ variables.FTP_USERNAME }}
+        server: ${{ vars.FTP_SERVER }}
+        username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         protocol: ftps
